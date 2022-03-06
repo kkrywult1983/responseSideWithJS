@@ -1,0 +1,26 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 20px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px;
+  height: 100vh;
+  background-color: #333;
+  font-size: 36px;
+  color: white;
+}
+
+.bi {
+  font-size: 300px;
+}
+/*# sourceMappingURL=zadanieJS.css.map */

@@ -1,0 +1,146 @@
+// * {
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// body {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     height: 100vh;
+//     font-family: 'Montserrat', sans-serif;
+//     background-color: #333;
+// }
+
+// button {
+//     padding: 10px 20px;
+//     background: none;
+//     border: 1px solid #fff;
+//     color: #fff;
+//     font-size: 24px;
+//     text-transform: uppercase;
+//     cursor: pointer;
+// }
+
+// .btn2 {
+//     margin-left: 30px;
+// }
+
+// .color {
+//     margin: 50px auto;
+//     width: 300px;
+//     height: 300px;
+//     background-color: gold;
+// }
+
+// .remove-color {
+//     background-color: gold;
+//     width: 90%;
+//     color: #000;
+// }
+
+// .blue {
+//     background-color: royalblue;
+// }
+
+// .red {
+//     background-color: tomato;
+// }
+// --------------------------
+
+// ZADANIE JS -PROJ 75 KURS CZ.II
+
+// * {
+// 	box-sizing: border-box;
+// 	margin: 0;
+// 	padding: 0;
+// }
+
+// body {
+// 	height: 100vh;
+// 	font-family: 'Montserrat', sans-serif;
+// 	background-color: #333;
+// }
+
+// .item {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	position: relative;
+// 	background-size: cover;
+// 	transition: 0.6s;
+// }
+
+// .item1 {
+// 	height: 0px;
+// 	background-image: url('https://pixabay.com/get/g3d8667bf3011b085de7b3600b147d69b9b38bc5d7f2b6f210a35d01291aaae73527cf673b1d78bfa9e17c6e4300b8a2a97a5d24a201db8b430e4621e64e2d0f70eda8e68862352466c125fa0d379b013_1920.jpg');
+// }
+
+// .item2 {
+// 	height: 300px;
+// 	background-image: url('https://pixabay.com/get/g9b05920870b636a73c4522e80a52de87f7583ceac5a62419924230ba568d105cd504ab5aa1145deccff4537c8022131c977a9e394736d20cc8a06b50189fc19873fc257f3c36a7767fb86e03e7403de0_1920.jpg');
+// 	background-position: center;
+// }
+
+// .show {
+// 	height: 400px;
+// }
+
+// section {
+// 	display: flex;
+// 	justify-content: center;
+// 	margin-top: 50px;
+
+// 	button {
+// 		margin: 0 30px;
+// 		padding: 10px 30px;
+// 		background: none;
+// 		border-radius: 5px;
+// 		border: 2px solid #00cfff;
+// 		color: #00cfff;
+// 		box-shadow: 3px 3px 10px #00cfff;
+// 		font-size: 36px;
+// 		transition: color 0.3s, box-shadow 0.3s;
+// 		cursor: pointer;
+// 	}
+
+// 	button:hover {
+// 		color: #00ffae;
+// 		box-shadow: 3px 3px 10px #00ffae;
+// 	}
+
+// 	.fas {
+// 		transition: transform  0.6s;
+// 	}
+
+// }
+
+// ------------------------------------
+// ZADANIE Z BUTTONAMI W JS -PROJ 76 KURS CZ.II
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 20px;
+    
+
+}
+
+body {
+    display: flex;
+    margin: 50px;
+    height: 100vh;
+    background-color: #333;
+    font-size: 36px;
+    color: white;
+}
+ 
+.bi {
+    font-size: 300px;
+}

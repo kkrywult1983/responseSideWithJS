@@ -1,0 +1,153 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #333;
+  font-size: 20px;
+  color: white;
+}
+
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+button {
+  width: 100px;
+  height: 25px;
+  background-color: royalblue;
+  cursor: pointer;
+}
+
+li {
+  list-style-position: inside;
+  background-color: rgba(7, 43, 40, 0.836);
+}
+
+.square {
+  width: 100px;
+  text-align: center;
+}
+
+.first {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.first .two {
+  background-color: lime;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.first .four {
+  background-color: tomato;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.second {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.third .one {
+  background-color: gold;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.third .two {
+  background-color: lime;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.third .three {
+  background-color: royalblue;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.third .four {
+  background-color: tomato;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.fourth {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.fourth .one {
+  background-color: gold;
+}
+
+.fourth .two {
+  background-color: lime;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.fourth .three {
+  background-color: royalblue;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.fourth .four {
+  background-color: tomato;
+}
+
+.one {
+  background-color: gold;
+}
+
+.two {
+  background-color: lime;
+}
+
+.three {
+  background-color: royalblue;
+}
+
+.four {
+  background-color: tomato;
+}
+/*# sourceMappingURL=style.css.map */

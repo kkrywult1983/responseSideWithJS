@@ -1,0 +1,418 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #333;
+	font-size: 20px;
+	color: white;
+}
+
+div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	}
+
+	button{
+		width: 100px;
+		height: 25px;
+		background-color: royalblue;
+		cursor: pointer;
+	}
+	li {
+		list-style-position: inside;
+		background-color: rgba(7, 43, 40, 0.836);
+	}
+
+.square {
+	width: 100px;
+	text-align: center;
+}
+
+.first {
+	flex-direction: column;
+	justify-content: center;
+	.two {
+		background-color: lime;
+		flex-grow: 1;
+	}
+	.four {
+		background-color: tomato;
+		flex-grow: 1;
+	}
+}
+
+.second {
+	align-items: center;
+	justify-content: space-around;
+}
+
+.third {
+	.one {
+		background-color: gold;
+		order: 3;
+		flex-grow: 1;
+	}
+	.two {
+		background-color: lime;
+		order: 2;
+	}
+	.three {
+		background-color: royalblue;
+		order: 0;
+	}
+	.four {
+		background-color: tomato;
+		order: 1;
+		flex-grow: 3;
+	}
+}
+
+.fourth {
+	flex-direction: row-reverse;
+	align-items: flex-end;
+
+	.one {
+		background-color: gold;
+	}
+
+	.two {
+		background-color: lime;
+		align-self: flex-start;
+	}
+
+	.three {
+		background-color: royalblue;
+		align-self: center;
+	}
+
+	.four {
+		background-color: tomato;
+	}
+}
+
+.one {
+	background-color: gold;
+}
+
+.two {
+	background-color: lime;
+}
+.three {
+	background-color: royalblue;
+}
+
+.four {
+	background-color: tomato;
+}
+
+// justify-content: center;
+// align-items: stretch ;
+// align-items: flex-start;
+// align-items: flex-end;
+// align-items: center;
+// align-items: baseline;
+// }
+// .square {
+// 	width: 20%;
+// 	text-align: center;
+// }
+
+// .one {
+// 	background-color: gold;
+// }
+// .two {
+// 	background-color: lime;
+// }
+
+// .three {
+// 	background-color: royalblue;
+// }
+
+// .four {
+// 	background-color: tomato;
+// }
+
+// ANIMACJE
+// ----------------------------------
+// .one {
+// 	animation-fill-mode: none;
+// }
+// .two {
+// 	animation-fill-mode: forwards;
+// }
+// .three {
+// 	animation-fill-mode: backwards;
+// }
+// .four {
+// 	animation-fill-mode: both;
+// }
+
+// @keyframes color {
+// 	0% {
+// 		width: 100px;
+// 		background-color: gold;
+// 	}
+// 	50% {
+// 		width: 250px;
+// 		background-color: royalblue;
+// 	}
+
+// 	100% {
+// 		width: 500px;
+// 		background-color: red;
+// 	}
+// }
+
+// Zmienne
+// $width: 100px;
+// $height: 100px;
+// $first-color: gold;
+// $second-color: lime;
+
+// body {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	flex-direction: column;
+// 	height: 100vh;
+// 	background-color: rgb(186, 202, 36);
+// }
+
+// div {
+// 	width: $width;
+// 	height: $height;
+// 	margin: 10px;
+// 	border: solid 3px black;
+// }
+
+// .one {
+// 	background-color: $first-color;
+// }
+
+// .two {
+// 	background-color: $second-color;
+// }
+
+// ------------------------------------------------------------
+
+// MAPA - obiekt na nasze zmienne - PARA klucz + wartość
+
+// $colors: (
+// 	top: royalblue,
+// 	center: lime,
+// 	bottom: tomato,
+// );
+
+// * {
+// 	box-sizing: border-box;
+// 	margin: 0;
+// 	padding: 0;
+// }
+
+// body {
+// 	background-color: #333;
+// 	font-family: sans-serif;
+// }
+
+// .square {
+// 	margin: 50px;
+// 	width: 200px;
+// 	height: 200px;
+// 	border: 5px solid black;
+// }
+
+// .item1 {
+// 	background-color: map-get($colors,top) ;
+// }
+// .item2 {
+// 	background-color: map-get($colors,center) ;
+// }
+// .item3 {
+// 	background-color: map-get($colors,bottom) ;
+// }
+// ------------------------------
+
+// MIXINY
+
+// @mixin addons {
+// 	background-color: gold;
+// 	border-radius: 25px;
+// }
+
+// // MIXIN programistyczny - bardziej zaawansowany
+
+// @mixin color($bg-color) {
+// 	background-color: $bg-color;
+// }
+// // ----------------------
+// // IMPORT
+// @import './colors';
+
+// * {
+// 	box-sizing: border-box;
+// 	margin: 0;
+// 	padding: 0;
+// }
+
+// body {
+// 	background-color: #333;
+// 	font-family: sans-serif;
+// }
+// 	margin: 30px;
+
+// .square {
+// 	width: 200px;
+// 	height: 200px;
+// 	border: 5px solid black;
+// 	border-radius: 25px;
+
+// 	// @include addons;
+// }
+
+// .success {
+// 	@include color(lime);
+
+// }
+// .warning {
+// 	@include color(tomato);
+// }
+// ----------------------------------------------
+
+// IMPORT - w folderze SASS tworzymy nowy plik z podkresleniem _colors.scss. - plik z kodem pomocniczym np. ze zmiennymi.
+
+// .one{
+// 	background-color: $gold;
+// }
+// .two {
+// background-color: $tomato;
+// }
+// .three{
+// background-color: $milk;
+// ;
+// }
+
+// -----------------------------
+// ZADANIE nr.1 - Zmienne i Mixiny
+
+// @import './reset';
+
+// @mixin tekst {
+// 	text-align: center;
+// }
+// @mixin cirrus {
+// 	width: 100px;
+// 	height: 100px;
+// 	margin: 30px auto;
+// 	background-color: lime;
+// 	border: 3px solid black;
+// 	border-radius: 50px;
+// }
+
+// * {
+// 	box-sizing: $box;
+// 	margin: $mar;
+// 	padding: $pad;
+// }
+// html {
+// 	font-size: 10px;
+// }
+
+// body {
+// 	font-family: sans-serif;
+// 	@include tekst;
+// }
+
+// section{
+// 	height: 25vh;
+// }
+
+// .odd {
+// 	background-color: $color-odd;
+// }
+
+// .even {
+// 	background-color: $color-even;
+// }
+
+// h1 {
+// 	font-size: 3rem;
+// }
+// h2 {
+// 	font-size: 2.4rem;
+// }
+
+// h3 {
+// 	font-size: 1.8rem;
+// }
+// p {
+// 	font-size: 1.6rem;
+// }
+// .circle {
+// 	@include cirrus;
+
+// }
+
+// ---------------------------------------------
+// PSEUDO KLASY - First child last child, first of type, last of type
+
+// p:first-child {
+// 	color: lime;
+// }
+// p:last-child {
+// 	color: gold;
+// }
+// p:first-of-type{
+// 	color: royalblue;
+// }
+// div:last-of-type{
+// 	color:tomato;
+// }
+
+// table,
+// tr,
+// td {
+// 	border: 2px solid black;
+// }
+
+// td {
+// 	width: 300px;
+// 	height: 100px;
+// }
+// .title {
+// 	transition: color 1s;
+// 	cursor: pointer;
+// }
+// .title:hover {
+// 	color: blueviolet;
+// }
+// li:nth-child(even) {
+// 	color: lime;
+// }
+
+// span:first-of-type {
+// 	color: yellow;
+// }
+
+// .test {
+// 	p:first-child, p:last-child {
+// 		color: tomato;
+// 	}
+// }
+
+// // odd lub even lub np: 3n, 2n
+//  p:nth-child(3n) {
+// 	 color: lime;
+//  }
+// tr:nth-child(odd){
+// 	background-color: #fff;
+// }
+// tr:nth-child(even){
+// 	background-color: rgb(179, 179, 179);
+// }
